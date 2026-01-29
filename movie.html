@@ -1,0 +1,137 @@
+Here’s a clear, complete HTML code for a simple movie booking website. This version is self‑contained, so you can copy it into a file named index.html and run it directly in your browser. It includes basic structure, styling, and a booking form.
+
+📄 index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Booking Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    #movies {
+      display: flex;
+      justify-content: space-around;
+      margin: 2rem;
+    }
+    .movie-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .movie-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    #booking {
+      background: #fff;
+      margin: 2rem;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+    }
+    input, select, button {
+      margin-top: 5px;
+      padding: 8px;
+      font-size: 1rem;
+    }
+    button {
+      background: #222;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #444;
+    }
+    #confirmation {
+      margin-top: 15px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie Booking</h1>
+  </header>
+
+  <main>
+    <section id="movies">
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300?text=Avengers" alt="Avengers">
+        <h3>Avengers: Endgame</h3>
+        <p>Superheroes unite to save the universe.</p>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300?text=Inception" alt="Inception">
+        <h3>Inception</h3>
+        <p>A mind-bending thriller about dreams within dreams.</p>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300?text=Interstellar" alt="Interstellar">
+        <h3>Interstellar</h3>
+        <p>Exploring space and time to save humanity.</p>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Book Your Ticket</h2>
+      <form id="bookingForm">
+        <label for="movie">Movie:</label>
+        <select id="movie" name="movie">
+          <option value="Avengers: Endgame">Avengers: Endgame</option>
+          <option value="Inception">Inception</option>
+          <option value="Interstellar">Interstellar</option>
+        </select>
+
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" name="seats" min="1" max="10" required>
+
+        <button type="submit">Book Now</button>
+      </form>
+      <p id="confirmation"></p>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const movie = document.getElementById("movie").value;
+      const seats = document.getElementById("seats").value;
+      document.getElementById("confirmation").textContent =
+        `✅ You booked ${seats} seat(s) for "${movie}". Enjoy the show!`;
+    });
+  </script>
+</body>
+</html>
+
+
+
+🚀 How to Run
+- Copy the code above into a file named index.html.
+- Save it inside a folder (e.g., movie-booking).
+- Double‑click index.html → it will open in your browser.
+- Select a movie, choose seats, and click Book Now. You’ll see a confirmation message.
+
+👉 This is a basic front‑end only version. If you want, I can extend it with a Node.js backend + database connection (AWS RDS) so it becomes a proper 3‑tier app. Would you like me to show you that next?
+

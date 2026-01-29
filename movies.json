@@ -1,0 +1,19 @@
+
+[
+  {
+    "title": "Avengers: Endgame",
+    "description": "Superheroes unite to save the universe.",
+    "poster": "https://via.placeholder.com/200x300?text=Avengers"
+  },
+  {
+    "title": "Inception",
+    "description": "A mind-bending thriller about dreams within dreams.",
+    "poster": "https://via.placeholder.com/200x300?text=Inception"
+  },
+  {
+    "title": "Interstellar",
+    "description": "Exploring space and time to save humanity.",
+    "poster": "https://via.placeholder.com/200x300?text=Interstellar"
+  }
+]
+
